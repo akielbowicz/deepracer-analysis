@@ -3,7 +3,7 @@
 venv
 reward
 !reward/reward_sample.py
-logs
+!logs
 !logs/*-sample.log
 *.pickle
 .ipynb_checkpoints
