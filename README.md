@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/akielbowicz/deepracer-analysis.git/first_analysis?urlpath=%2Flab)
+
 # deepracer-analysis
 
 This is a set of notebooks and utilities to enable analysis of logs for AWS DeepRacer.
