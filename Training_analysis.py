@@ -198,11 +198,11 @@ df = df.sort_values(['episode', 'steps'])
 # personally I think normalizing can mask too high rewards so I am commenting it out,
 # but you might want it.
 # slio.normalize_rewards(df)
-
-#Uncomment the line of code below to evaluate a different reward function
-#nr.new_reward(df, track.center_line, 'reward.reward_sample') #, verbose=True)
 df.head()
 # -
+
+#Uncomment the line of code below to evaluate a different reward function
+nr.new_reward(df, track.center_line, 'reward') #, verbose=True)
 
 # ## New reward
 #

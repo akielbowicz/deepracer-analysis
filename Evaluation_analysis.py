@@ -191,7 +191,7 @@ pu.plot_grid_world(lap_df, track, graphed_value='reward')
 # eval_sim = 'sim-sample'
 # eval_fname = 'logs/deepracer-eval-%s.log' % eval_sim
 
-eval_fname = 'logs/evaluation-simulation-logs-y1.csv'
+eval_fname = 'logs/evaluation-simulation-logs-y1.log'
 # cw.download_log(eval_fname, stream_prefix=eval_sim)
 
 # +
