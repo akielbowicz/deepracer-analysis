@@ -7,5 +7,5 @@ URL=$($SCRIPTPATH/url-to-notebook.sh)
 if test -z $URL; then
     echo "Could not find notebook details, have you run start.sh?"
 else
-    browse $URL
+    firefox $URL
 fi

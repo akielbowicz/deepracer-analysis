@@ -6,7 +6,7 @@
 #       extension: .py
 #       format_name: light
 #       format_version: '1.5'
-#       jupytext_version: 1.4.1
+#       jupytext_version: 1.5.0
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -45,7 +45,7 @@
 # AWS DeepRacer Console
 stream_name = 'sim-sample' ## CHANGE This to your simulation application ID
 
-# + jupyter={"source_hidden": true}
+# +
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -71,7 +71,7 @@ warnings.filterwarnings('ignore')
 #
 # Tracks Available:
 
-# + jupyter={"source_hidden": true}
+# +
 tu = TrackIO()
 
 for f in tu.get_tracks():
@@ -80,7 +80,7 @@ for f in tu.get_tracks():
 
 # Take the name from results above and paste below to load the key elements of the track and view the outline of it.
 
-# + jupyter={"source_hidden": true}
+# +
 track: Track = tu.load_track("reinvent_base")
  
 l_track = track.center_line
@@ -107,11 +107,11 @@ pu.plot_trackpoints(track)
 #
 # Select your preferred way to get the logs below and you can get rid of the rest.
 
-# + jupyter={"source_hidden": true}
+# +
 # AWS DeepRacer Console
 #stream_name = 'sim-test' ## CHANGE This to your simulation application ID
-fname = 'logs/deepracer-%s.log' %stream_name  # The log will be downloaded into the specified path
-cw.download_log(fname, stream_prefix=stream_name)  # add force=True if you downloaded the file before but want to repeat
+# fname = 'logs/deepracer-%s.log' %stream_name  # The log will be downloaded into the specified path
+# cw.download_log(fname, stream_prefix=stream_name)  # add force=True if you downloaded the file before but want to repeat
 
 
 # DeepRacer for Dummies / ARCC repository - comment the above and uncomment
@@ -125,7 +125,7 @@ cw.download_log(fname, stream_prefix=stream_name)  # add force=True if you downl
 
 # Chris Rhodes' repository
 # Use a preferred way of saving the logs to a file , then set an fname value to load it
-# fname = /path/to/your/log/file
+fname = './logs/logs-sim-n84c5zkt3xxp_0.log'
 # -
 
 # ## Load the trace training log
@@ -170,6 +170,9 @@ df = df.sort_values(['episode', 'steps'])
 
 #Uncomment the line of code below to evaluate a different reward function
 #nr.new_reward(df, l_center_line, 'reward.reward_sample') #, verbose=True)
+# -
+
+df
 
 # + jupyter={"source_hidden": true}
 simulation_agg = au.simulation_agg(df)
@@ -463,6 +466,3 @@ for i in setActions:
     print("\n\n Heatmap for action with index {}: steering: {}, throttle: {}".format(a.index, a.steer,a.throttle))
     tr_plot = pu.plot_track(df[df['action'] == a.index], track, value_field="reward") 
     plt.show()
-# -
-
-

@@ -6,7 +6,7 @@
 #       extension: .py
 #       format_name: light
 #       format_version: '1.5'
-#       jupytext_version: 1.4.1
+#       jupytext_version: 1.5.0
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -140,9 +140,9 @@ pu.plot_trackpoints(track)
 
 # +
 # AWS DeepRacer Console
-stream_name = 'sim-sample' ## CHANGE This to your simulation application ID
-fname = 'logs/deepracer-%s.log' %stream_name  # The log will be downloaded into the specified path
-cw.download_log(fname, stream_prefix=stream_name)  # add force=True if you downloaded the file before but want to repeat
+# stream_name = 'sim-sample' ## CHANGE This to your simulation application ID
+# fname = 'logs/deepracer-%s.log' %stream_name  # The log will be downloaded into the specified path
+# cw.download_log(fname, stream_prefix=stream_name)  # add force=True if you downloaded the file before but want to repeat
 
 
 # DeepRacer for Dummies / ARCC repository - comment the above and uncomment
@@ -156,7 +156,7 @@ cw.download_log(fname, stream_prefix=stream_name)  # add force=True if you downl
 
 # Chris Rhodes' repository
 # Use a preferred way of saving the logs to a file , then set an fname value to load it
-# fname = /path/to/your/log/file
+fname = './logs/training-simulation-logs-y1.log'
 # -
 
 # ## Load the trace training log
@@ -201,6 +201,7 @@ df = df.sort_values(['episode', 'steps'])
 
 #Uncomment the line of code below to evaluate a different reward function
 #nr.new_reward(df, track.center_line, 'reward.reward_sample') #, verbose=True)
+df.head()
 # -
 
 # ## New reward
@@ -422,7 +423,7 @@ df[df['episode']==10]
 # If you have a final step reward that makes the rest of this histogram
 # unreadable, you can filter the last step out by using
 # `episode[:-1].plot.bar` instead of `episode.plot.bar`
-episode = df[df['episode']==771]
+episode = df[df['episode']==9]
 episode.plot.bar(x='closest_waypoint', y='reward')
 
 # ### Path taken for top reward iterations
@@ -521,7 +522,8 @@ import os
 base_folder = 'logs'
 df_list = list()
 big_training_panda = None
-for stream in os.listdir(base_folder):
+# for stream in os.listdir(base_folder):
+for stream in ['training-simulation-logs-y1.log']:
     data = slio.load_data('%s/%s' % (base_folder, stream))
     df = slio.convert_to_pandas(data)
     df['stream'] = stream[10:]

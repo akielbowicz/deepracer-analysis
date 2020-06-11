@@ -6,7 +6,7 @@
 #       extension: .py
 #       format_name: light
 #       format_version: '1.5'
-#       jupytext_version: 1.3.4
+#       jupytext_version: 1.5.0
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -106,7 +106,7 @@ track.road_poly
 # +
 # For the purpose of generating the notebook in a reproducible way
 # logs download has been commented out.
-logs = [('logs/deepracer-eval-sim-sample.log', 'sim-sample')]
+logs = [('logs/training-simulation-logs-y1.log', 'sim-sample')]
 
 # logs = cw.download_all_logs(
 #     'logs/deepracer-eval-', 
@@ -187,11 +187,16 @@ pu.plot_grid_world(lap_df, track, graphed_value='reward')
 #
 # Debug your evaluation runs or analyze the laps. By providing the evaluation simulation id you can fetch a single log file and use it. You can do the same for race submission but I recommend using the bulk solution above. If you still want to do it, make sure to add `log_group = "/aws/robomaker/leaderboard/SimulationJobs"` to `download_log` call.
 
-eval_sim = 'sim-sample'
-eval_fname = 'logs//deepracer-eval-%s.log' % eval_sim
-cw.download_log(eval_fname, stream_prefix=eval_sim)
+# +
+# eval_sim = 'sim-sample'
+# eval_fname = 'logs/deepracer-eval-%s.log' % eval_sim
 
-# !head $eval_fname
+eval_fname = 'logs/evaluation-simulation-logs-y1.csv'
+# cw.download_log(eval_fname, stream_prefix=eval_sim)
+
+# +
+# # !head $eval_fname
+# -
 
 eval_df = slio.load_pandas(eval_fname)
 eval_df.head()
