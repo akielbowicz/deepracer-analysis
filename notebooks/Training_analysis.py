@@ -202,6 +202,8 @@ df.head()
 # -
 
 #Uncomment the line of code below to evaluate a different reward function
+import sys
+sys.path.append('../')
 nr.new_reward(df, track.center_line, 'reward') #, verbose=True)
 
 # ## New reward
@@ -518,12 +520,15 @@ pu.plot_selected_laps([iteration_id], df, track, section_to_plot = 'iteration')
 
 # +
 import os
-
+import pathlib
 base_folder = '../logs'
 df_list = list()
 big_training_panda = None
-# for stream in os.listdir(base_folder):
-for stream in ['training-simulation-logs-y1.log']:
+
+base_path = pathlib.Path(base_folder)
+stream_names = [path.name for path in base_path.glob('training*')]
+
+for stream in stream_names:
     data = slio.load_data('%s/%s' % (base_folder, stream))
     df = slio.convert_to_pandas(data)
     df['stream'] = stream[10:]
