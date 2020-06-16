@@ -22,6 +22,7 @@ class BaseReward:
     def base_reward(self):
         return 1e-3
 
+
 class AWSReward(BaseReward):
 
     def optimal_steps(self):
@@ -64,6 +65,7 @@ class RewardZ1(AWSReward):
 class RewardZ2(RewardZ1):
     pass
 
+
 class RewardZ3(RewardZ1):
 
     def _calculateReward(self):
@@ -80,7 +82,6 @@ class RewardZ4(AWSReward):
                 + self.follow_the_center_line()
                 + self.progress_bonus()
                 + self.speed_bonus() )
-
 
 
 class RewardZ4_2(AWSReward):
@@ -104,6 +105,7 @@ class RewardZ5(AWSReward):
             + self.progress_bonus()
             + self.speed_bonus()
             + self.control_steering() )
+
 
 class RewardZ6(AWSReward):
 
@@ -230,3 +232,49 @@ class RewardW2(AWSReward):
 
     def penalize_over_steering(self):
         return 0.8 if abs(self.steering_angle) > self.max_steering else 1.0
+
+
+class RewardW3(RewardW2):
+
+    def complete_track(self):
+        step_ratio = self.optimal_steps() / self.steps
+        
+        # make the reward much steeper than just a simple ratio
+        step_reward_ratio = pow(1000, step_ratio / self.optimal_steps())
+        
+        return step_reward_ratio * 100.0 if self.progress == self.max_progress else 0.0 
+
+    def optimal_steps(self):
+        # make the optimal number of steps 20% more conservative than what we calculate based on length
+        optimal_error = 1.20
+        return optimal_error * self.track_length / self.max_speed * 15 #15 steps per second as camera has 15 frames per second
+
+
+class RewardW4(RewardW3):
+
+    def complete_track(self):
+        step_diff = self.optimal_steps() - self.steps
+        
+        # make the reward much steeper than just a simple ratio
+        step_reward_ratio = pow(1000, step_diff / self.optimal_steps())
+        
+        return step_reward_ratio * 100.0 if self.progress == self.max_progress else 0.0 
+
+
+class RewardW5(RewardW4):
+    pass
+
+
+class RewardW6(RewardW5):
+
+    def complete_track(self):
+        step_diff = self.optimal_steps() - self.steps
+        
+        # make the reward much steeper than just a simple ratio
+        step_reward_ratio = pow(1000, step_diff / self.optimal_steps())
+        
+        # max make the max step reward depend on the optimal steps so this it depends on the track length (and not fixed to 100
+        # for example) it shouldnt be possible for the model to get this type of reward unless it completes the track though 
+        max_step_reward = self.optimal_steps() * 10
+        
+        return step_reward_ratio * max_step_reward if self.progress == self.max_progress else 0.0 
