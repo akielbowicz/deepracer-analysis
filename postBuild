@@ -1,4 +1,7 @@
 jupyter lab clean
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter labextension install qgrid2
+jupyter labextension install ipyvolume
+jupyter labextension install jupyter-threejs
+
 jupyter lab build
