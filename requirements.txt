@@ -9,3 +9,4 @@ seaborn
 eli5
 networkx
 scipy
+qgrid
