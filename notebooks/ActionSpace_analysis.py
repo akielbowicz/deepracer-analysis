@@ -72,7 +72,7 @@ warnings.filterwarnings('ignore')
 # Tracks Available:
 
 # +
-tu = TrackIO()
+tu = TrackIO(base_path='../tracks')
 
 for f in tu.get_tracks():
     print(f)
@@ -125,7 +125,7 @@ pu.plot_trackpoints(track)
 
 # Chris Rhodes' repository
 # Use a preferred way of saving the logs to a file , then set an fname value to load it
-fname = 'logs/training-simulation-logs-y1.log'
+fname = '../logs/training-simulation-logs-y1.log'
 # -
 
 # ## Load the trace training log

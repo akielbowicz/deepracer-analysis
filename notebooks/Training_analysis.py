@@ -108,9 +108,9 @@ warnings.filterwarnings('ignore')
 # Tracks Available:
 
 # +
-# !ls tracks/
+# !ls ../tracks/
 
-tu = TrackIO()
+tu = TrackIO(base_path='../tracks')
 # -
 
 # Take the name from results above and paste below to load the key elements of the track and view the outline of it.
@@ -156,7 +156,7 @@ pu.plot_trackpoints(track)
 
 # Chris Rhodes' repository
 # Use a preferred way of saving the logs to a file , then set an fname value to load it
-fname = './logs/training-simulation-logs-y1.log'
+fname = '../logs/training-simulation-logs-y1.log'
 # -
 
 # ## Load the trace training log
@@ -519,7 +519,7 @@ pu.plot_selected_laps([iteration_id], df, track, section_to_plot = 'iteration')
 # +
 import os
 
-base_folder = 'logs'
+base_folder = '../logs'
 df_list = list()
 big_training_panda = None
 # for stream in os.listdir(base_folder):

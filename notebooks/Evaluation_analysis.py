@@ -81,9 +81,9 @@ warnings.filterwarnings('ignore')
 # Tracks Available:
 
 # +
-# !ls tracks/
+# !ls ../tracks/
 
-tu = TrackIO()
+tu = TrackIO(base_path='../tracks')
 
 # +
 track: Track = tu.load_track("reinvent_base")
@@ -106,7 +106,7 @@ track.road_poly
 # +
 # For the purpose of generating the notebook in a reproducible way
 # logs download has been commented out.
-logs = [('logs/training-simulation-logs-y1.log', 'sim-sample')]
+logs = [('../logs/training-simulation-logs-y1.log', 'sim-sample')]
 
 # logs = cw.download_all_logs(
 #     'logs/deepracer-eval-', 
@@ -191,7 +191,7 @@ pu.plot_grid_world(lap_df, track, graphed_value='reward')
 # eval_sim = 'sim-sample'
 # eval_fname = 'logs/deepracer-eval-%s.log' % eval_sim
 
-eval_fname = 'logs/evaluation-simulation-logs-y1.log'
+eval_fname = '../logs/evaluation-simulation-logs-y1.log'
 # cw.download_log(eval_fname, stream_prefix=eval_sim)
 
 # +
@@ -205,6 +205,3 @@ eval_df.head()
 # The code below visualises laps from a single log file just like the one above visualises it in bulk for many.
 
 eu.analyse_single_evaluation(eval_df, track)
-
-
-
