@@ -466,3 +466,5 @@ for i in setActions:
     print("\n\n Heatmap for action with index {}: steering: {}, throttle: {}".format(a.index, a.steer,a.throttle))
     tr_plot = pu.plot_track(df[df['action'] == a.index], track, value_field="reward") 
     plt.show()
+# -
+
