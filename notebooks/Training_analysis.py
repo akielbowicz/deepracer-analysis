@@ -521,3 +521,9 @@ track_breakdown.keys()
 # Bear in mind that you will have to provide a proper action naming in parameter `action_names`, this function assumes only six actions by default. I think they need to match numbering of actions in your model's metadata json file.
 
 abu.action_breakdown(df, 20, track, track_breakdown['reinvent2018'])
+
+import seaborn
+
+seaborn.pairplot(simulation_agg[['steps','progress','reward','time_if_complete','reward_if_complete','complete']],hue='complete')
+
+
