@@ -156,7 +156,7 @@ pu.plot_trackpoints(track)
 
 # Chris Rhodes' repository
 # Use a preferred way of saving the logs to a file , then set an fname value to load it
-fname = '../logs/training-simulation-logs-y1.log'
+fname = '../logs/training-simulation-logs-w6.log'
 # -
 
 # ## Load the trace training log
@@ -204,7 +204,9 @@ df.head()
 #Uncomment the line of code below to evaluate a different reward function
 import sys
 sys.path.append('../')
-nr.new_reward(df, track.center_line, 'reward') #, verbose=True)
+from reward import AWSReward, RewardFactory
+factory = RewardFactory(AWSReward)
+factory.calculate_all_rewards(df, track.center_line, nr.df_to_params, missing_params=factory.DEFAULT_MISSING_PARAMETERS)
 
 # ## New reward
 #
@@ -425,7 +427,7 @@ df[df['episode']==10]
 # If you have a final step reward that makes the rest of this histogram
 # unreadable, you can filter the last step out by using
 # `episode[:-1].plot.bar` instead of `episode.plot.bar`
-episode = df[df['episode']==9]
+episode = df[df['episode']==3]
 episode.plot.bar(x='closest_waypoint', y='reward')
 
 # ### Path taken for top reward iterations
