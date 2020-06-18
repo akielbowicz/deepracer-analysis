@@ -23,3 +23,13 @@ fields @timestamp, @message
 | sort by progress desc
 | limit 1000
 ```
+
+```
+fields @message 
+| filter @logStream like 'sim-c9nsngq61265'
+| filter @message like 'SIM_T'
+| parse @message "SIM_TRACE_LOG:*,*,*,*,*,*,*,*,*,*,*,*,*,*,*" as episodes,steps,x,y,heading,steering,speed,action_taken,reward,done, all_wheels_on_track, progress,closest_waypoint_index,track_length,time
+| sort by progress desc
+| display episodes, progress, steps, reward, time
+| limit 100
+```
