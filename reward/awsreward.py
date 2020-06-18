@@ -314,4 +314,5 @@ class RewardV1(RewardW7):
         
         return step_reward_ratio * max_step_reward     
 
-    
+class RewardV2(RewardV1):
+    pass
