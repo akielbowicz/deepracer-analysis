@@ -95,3 +95,17 @@ def df_to_params_orig(df_row, waypoints):
         }
 
         return params
+    
+def load_sample_complete_laps(path):
+    sample_laps = ( pandas.read_csv(path)
+                          .groupby('stream')
+                          .agg(list)['episode'] )
+    DFs = []
+    for filename, episodes in sample_laps.iteritems():
+        df = load_logs(f'../logs/{filename}')
+        df = df[df['episode'].isin(episodes)]
+        df['stream'] = filename
+        DFs.append(df)
+    df = pandas.concat(DFs).reset_index()
+    df['stream'] = df['stream'].astype('category')
+    return df

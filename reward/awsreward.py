@@ -238,11 +238,11 @@ class RewardW3(RewardW2):
 
     def complete_track(self):
         step_ratio = self.optimal_steps() / self.steps
-        
+
         # make the reward much steeper than just a simple ratio
         step_reward_ratio = pow(1000, step_ratio / self.optimal_steps())
-        
-        return step_reward_ratio * 100.0 if self.progress == self.max_progress else 0.0 
+
+        return step_reward_ratio * 100.0 if self.progress == self.max_progress else 0.0
 
     def optimal_steps(self):
         # make the optimal number of steps 20% more conservative than what we calculate based on length
@@ -254,11 +254,11 @@ class RewardW4(RewardW3):
 
     def complete_track(self):
         step_diff = self.optimal_steps() - self.steps
-        
+
         # make the reward much steeper than just a simple ratio
         step_reward_ratio = pow(1000, step_diff / self.optimal_steps())
-        
-        return step_reward_ratio * 100.0 if self.progress == self.max_progress else 0.0 
+
+        return step_reward_ratio * 100.0 if self.progress == self.max_progress else 0.0
 
 
 class RewardW5(RewardW4):
@@ -269,12 +269,20 @@ class RewardW6(RewardW5):
 
     def complete_track(self):
         step_diff = self.optimal_steps() - self.steps
-        
+
         # make the reward much steeper than just a simple ratio
         step_reward_ratio = pow(1000, step_diff / self.optimal_steps())
-        
+
         # max make the max step reward depend on the optimal steps so this it depends on the track length (and not fixed to 100
-        # for example) it shouldnt be possible for the model to get this type of reward unless it completes the track though 
+        # for example) it shouldnt be possible for the model to get this type of reward unless it completes the track though
         max_step_reward = self.optimal_steps() * 10
-        
-        return step_reward_ratio * max_step_reward if self.progress == self.max_progress else 0.0 
+
+        return step_reward_ratio * max_step_reward if self.progress == self.max_progress else 0.0
+
+class RewardW7(RewardW6):
+    pass
+
+class RewardW8(RewardW7):
+    
+    def complete_track(self):
+        return 1.0
