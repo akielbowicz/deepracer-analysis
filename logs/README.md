@@ -20,6 +20,6 @@ fields @timestamp, @message
 | filter @message like 'SIM_TRACE'
 | sort @timestamp desc
 | parse @message "SIM_TRACE_LOG:*,*,*,*,*,*,*,*,*,*,*,*,*,*,*" as episodes,steps,x,y,heading,steering,speed,action_taken,reward,done, all_wheels_on_track, progress,closest_waypoint_index,track_length,time
-| sort by episodes,  closest_waypoint_index, steps asc
+| sort by progress desc
 | limit 1000
 ```
