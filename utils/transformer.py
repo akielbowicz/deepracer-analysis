@@ -56,7 +56,9 @@ def new_names_df(df):
                  'all_wheels_on_track':'on_track',
                 'closest_waypoint_index':'closest_waypoint',
                  'track_length':'track_len', 
-                 'time':'timestamp',
+#                  'time':'timestamp',
+                 'timestapm':'true_timestamp',
+                 'numeric_timestamp':'timestamp'
                 }
     return df.rename(columns=new_names)
 

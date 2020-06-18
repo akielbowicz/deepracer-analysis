@@ -199,14 +199,20 @@ df = df.sort_values(['episode', 'steps'])
 # but you might want it.
 # slio.normalize_rewards(df)
 df.head()
-# -
 
+# +
 #Uncomment the line of code below to evaluate a different reward function
 import sys
 sys.path.append('../')
 from reward import AWSReward, RewardFactory
-factory = RewardFactory(AWSReward)
+import reward.awsreward as rewards
+
+base_reward = rewards.RewardV1
+class new_reward(base_reward):
+    max_speed = 1.0
+factory = RewardFactory(base_reward)
 factory.calculate_all_rewards(df, track.center_line, nr.df_to_params, missing_params=factory.DEFAULT_MISSING_PARAMETERS)
+# -
 
 # ## New reward
 #
@@ -474,7 +480,8 @@ pu.plot_selected_laps(episodes_to_plot, df, track)
 #If you'd like some other colour criterion, you can add
 #a value_field parameter and specify a different column
 
-pu.plot_track(df, track)
+# pu.plot_track(df, track,value_field='new_reward',cmap='gray')
+pu.plot_track(df, track,value_field='reward',cmap='tab20c')
 # -
 
 # ### Plot a particular iteration
@@ -520,10 +527,12 @@ track_breakdown.keys()
 #
 # Bear in mind that you will have to provide a proper action naming in parameter `action_names`, this function assumes only six actions by default. I think they need to match numbering of actions in your model's metadata json file.
 
-abu.action_breakdown(df, 20, track, track_breakdown['reinvent2018'])
+# +
+# abu.action_breakdown(df, 20, track, track_breakdown['reinvent2018'])
+# -
 
 import seaborn
 
-seaborn.pairplot(simulation_agg[['steps','progress','reward','time_if_complete','reward_if_complete','complete']],hue='complete')
+seaborn.pairplot(simulation_agg[['steps','progress','reward','new_reward','time_if_complete','reward_if_complete','complete']],hue='complete')
 
 
