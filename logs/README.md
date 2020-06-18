@@ -24,6 +24,7 @@ fields @timestamp, @message
 | limit 1000
 ```
 
+Find the highest progress of an episode
 ```
 fields @message 
 | filter @logStream like 'sim-######'
@@ -34,6 +35,7 @@ fields @message
 | limit 100
 ```
 
+Make a histogram of a variable
 ```
 fields @message 
 | filter @logStream like 'sim-####'
@@ -42,4 +44,16 @@ fields @message
 | sort by progress desc
 | stats count(*) by steering, speed
 | limit 100
+```
+
+Find out how much is taking a lap
+```
+fields @message 
+| filter @logStream like 'sim-######'
+| filter @message like 'SIM_T'
+| parse @message "SIM_TRACE_LOG:*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*" as episodes,steps,x,y,heading,steering,speed,action_taken,reward,done, all_wheels_on_track, progress,closest_waypoint_index,track_length,time,status
+| stats min(time) as m, max(time) as M, max(progress) as p, max(time) - min(time) as  t by episodes
+| limit 100
+| display episodes, t , p 
+| sort t desc
 ```
