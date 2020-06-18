@@ -105,7 +105,8 @@ def load_sample_complete_laps(path):
         df = load_logs(f'../logs/{filename}')
         df = df[df['episode'].isin(episodes)]
         df['stream'] = filename
+#         df['name'] = [f'{filename}_{ep}' for ep in episodes]
         DFs.append(df)
     df = pandas.concat(DFs).reset_index()
-    df['stream'] = df['stream'].astype('category')
+#     df['stream'] = df['stream'].astype('category')
     return df
