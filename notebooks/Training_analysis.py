@@ -156,7 +156,7 @@ pu.plot_trackpoints(track)
 
 # Chris Rhodes' repository
 # Use a preferred way of saving the logs to a file , then set an fname value to load it
-fname = '../logs/training-simulation-logs-w6.log'
+fname = '../logs/training-simulation-logs-w7.log'
 # -
 
 # ## Load the trace training log
@@ -491,7 +491,7 @@ pu.plot_track(df[df['iteration'] == iteration_id], track)
 # ### Path taken in a particular episode
 
 # +
-episode_id = 122
+episode_id = 1
 
 pu.plot_selected_laps(simulation_agg[simulation_agg['episode'] == episode_id], df, track)
 # -
