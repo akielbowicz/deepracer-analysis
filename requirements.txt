@@ -10,3 +10,4 @@ eli5
 networkx
 scipy
 qgrid
+voila
