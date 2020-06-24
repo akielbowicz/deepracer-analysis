@@ -1,5 +1,5 @@
-from factory import RewardFactory
-from awsreward import AWSReward
+from .factory import RewardFactory
+from .awsreward import AWSReward
 
 import unittest
 
