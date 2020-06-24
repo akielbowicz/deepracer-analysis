@@ -1,9 +1,5 @@
 @timestamp,@message
-2020-06-21 00:41:26.594,cancel_simulation_job: make sure to shutdown simapp first
 2020-06-21 00:41:25.558,"SIM_TRACE_LOG:2,71,6.9754,2.9411,166.5976,-8.33,1.17,6,0.0010,True,False,34.3105,23,17.67,1592700084.58137,off_track"
-2020-06-21 00:41:25.558,Testing - Name: main_level/agent Worker: 0 Episode: 0 Total reward: 33.4 Steps: 0 Training iteration: 0 
-2020-06-21 00:41:25.558,"agent: Finished evaluation phase. Success rate = 0.0, Avg Total Reward = 33.4"
-2020-06-21 00:41:25.558,Initializing SageS3Client...
 2020-06-21 00:41:24.523,"SIM_TRACE_LOG:2,55,6.8604,0.8795,31.9357,16.67,3.50,17,1.0000,False,True,22.5487,14,17.67,1592700083.5100646,in_progress"
 2020-06-21 00:41:24.523,"SIM_TRACE_LOG:2,56,6.9311,0.9338,34.7599,16.67,3.50,17,1.0000,False,True,23.0526,15,17.67,1592700083.5766659,in_progress"
 2020-06-21 00:41:24.523,"SIM_TRACE_LOG:2,57,7.0007,1.0004,39.4358,16.67,1.17,15,1.0000,False,True,23.5812,15,17.67,1592700083.6457314,in_progress"
@@ -67,10 +63,6 @@
 2020-06-21 00:41:21.384,"SIM_TRACE_LOG:2,21,3.8170,0.4797,-4.0201,8.33,1.17,12,0.1000,False,True,5.1321,3,17.67,1592700081.2429893,in_progress"
 2020-06-21 00:41:21.384,"SIM_TRACE_LOG:2,22,3.8947,0.4791,-2.5015,8.33,1.17,12,0.1000,False,True,5.5718,3,17.67,1592700081.3085814,in_progress"
 2020-06-21 00:41:21.384,"SIM_TRACE_LOG:2,23,3.9847,0.4812,-0.7344,8.33,1.17,12,0.1000,False,True,6.0810,4,17.67,1592700081.3745854,in_progress"
-2020-06-21 00:41:20.346,Testing - Name: main_level/agent Worker: 0 Episode: 0 Total reward: 95.2 Steps: 0 Training iteration: 0 
-2020-06-21 00:41:20.346,"agent: Finished evaluation phase. Success rate = 0.0, Avg Total Reward = 95.2"
-2020-06-21 00:41:20.346,agent: Starting evaluation phase
-2020-06-21 00:41:20.346,Reset agent
 2020-06-21 00:41:20.346,"SIM_TRACE_LOG:2,1,2.5500,0.6831,0.0343,-25.00,1.17,0,1.0000,False,True,-2.0372,69,17.67,1592700079.9468172,in_progress"
 2020-06-21 00:41:20.346,"SIM_TRACE_LOG:2,2,2.5505,0.6831,0.0044,-25.00,2.33,1,1.0000,False,True,-2.0341,69,17.67,1592700079.9700496,in_progress"
 2020-06-21 00:41:20.346,"SIM_TRACE_LOG:2,3,2.5525,0.6829,-0.0784,-25.00,2.33,1,1.0000,False,True,-2.0232,69,17.67,1592700080.0405524,in_progress"
@@ -280,10 +272,6 @@
 2020-06-21 00:41:06.779,"SIM_TRACE_LOG:1,23,4.0768,0.6524,-12.2425,8.33,1.17,12,1.0000,False,True,6.6027,4,17.67,1592700066.5895162,in_progress"
 2020-06-21 00:41:06.779,"SIM_TRACE_LOG:1,24,4.1709,0.6300,-12.7304,8.33,1.17,12,1.0000,False,True,7.1351,4,17.67,1592700066.6625566,in_progress"
 2020-06-21 00:41:06.779,"SIM_TRACE_LOG:1,25,4.2588,0.6096,-12.8678,8.33,1.17,12,0.5000,False,True,7.6324,4,17.67,1592700066.7239885,in_progress"
-2020-06-21 00:41:05.742,Testing - Name: main_level/agent Worker: 0 Episode: 0 Total reward: 7.2 Steps: 0 Training iteration: 0 
-2020-06-21 00:41:05.742,"agent: Finished evaluation phase. Success rate = 0.0, Avg Total Reward = 7.2"
-2020-06-21 00:41:05.742,agent: Starting evaluation phase
-2020-06-21 00:41:05.742,Reset agent
 2020-06-21 00:41:05.742,"SIM_TRACE_LOG:1,1,2.5548,0.6838,0.2851,8.33,1.17,12,1.0000,False,True,-2.0102,69,17.67,1592700065.1785963,in_progress"
 2020-06-21 00:41:05.742,"SIM_TRACE_LOG:1,2,2.5553,0.6839,0.3079,-25.00,2.33,1,1.0000,False,True,-2.0074,69,17.67,1592700065.192159,in_progress"
 2020-06-21 00:41:05.742,"SIM_TRACE_LOG:1,3,2.5571,0.6841,0.4264,-25.00,2.33,1,1.0000,False,True,-1.9971,69,17.67,1592700065.2544155,in_progress"
@@ -298,10 +286,6 @@
 2020-06-21 00:41:04.703,"SIM_TRACE_LOG:0,11,2.7883,1.0291,58.8473,16.67,2.33,16,0.0010,False,False,-0.6877,69,17.67,1592700063.7845306,in_progress"
 2020-06-21 00:41:04.703,"SIM_TRACE_LOG:0,12,2.8128,1.1091,65.3612,16.67,2.33,16,0.0010,False,False,-0.5494,69,17.67,1592700063.848504,in_progress"
 2020-06-21 00:41:04.703,"SIM_TRACE_LOG:0,13,2.8281,1.1955,72.2780,16.67,2.33,16,0.0010,True,False,-0.4625,69,17.67,1592700063.9165413,off_track"
-2020-06-21 00:41:03.659,Graph manager successfully created the graph: Unpausing physics
-2020-06-21 00:41:03.659,agent: Starting evaluation phase
-2020-06-21 00:41:03.659,Reset agent
-2020-06-21 00:41:03.659,TrackerManager: missed an _update_sim_time call
 2020-06-21 00:41:03.659,"SIM_TRACE_LOG:0,1,2.5500,0.6832,0.0667,8.33,1.17,12,1.0000,False,True,-2.0373,69,17.67,1592700063.1709213,in_progress"
 2020-06-21 00:41:03.659,"SIM_TRACE_LOG:0,2,2.5510,0.6843,0.5261,-25.00,2.33,1,1.0000,False,True,-2.0314,69,17.67,1592700063.1866984,in_progress"
 2020-06-21 00:41:03.659,"SIM_TRACE_LOG:0,3,2.5532,0.6863,1.3544,-25.00,2.33,1,1.0000,False,True,-2.0191,69,17.67,1592700063.2471495,in_progress"
@@ -311,253 +295,3 @@
 2020-06-21 00:41:03.659,"SIM_TRACE_LOG:0,7,2.6499,0.7839,28.2004,-16.67,3.50,5,0.5000,False,True,-1.4719,69,17.67,1592700063.5161088,in_progress"
 2020-06-21 00:41:03.659,"SIM_TRACE_LOG:0,8,2.6868,0.8301,36.1439,-8.33,1.17,6,0.5000,False,True,-1.2626,69,17.67,1592700063.5868683,in_progress"
 2020-06-21 00:41:03.659,"SIM_TRACE_LOG:0,9,2.7313,0.9021,46.0768,-8.33,1.17,6,0.1000,False,True,-1.0108,69,17.67,1592700063.649319,in_progress"
-2020-06-21 00:41:02.605,Checkpoint - Restoring from path: ./checkpoint/47_Step-10378.ckpt 
-2020-06-21 00:40:59.904,Stop physics after creating graph
-2020-06-21 00:40:59.904,Creating session
-2020-06-21 00:40:56.765,Creating graph - name: MultiAgentGraphManager
-2020-06-21 00:40:56.765,Start physics before creating graph
-2020-06-21 00:40:56.765,Create graph
-2020-06-21 00:40:56.765,Creating agent - name: agent
-2020-06-21 00:40:56.765,[RL] Created agent loggers
-2020-06-21 00:40:56.765,"[RL] Dynamic import of memory:  ""EpisodicExperienceReplayParameters"" {"
-2020-06-21 00:40:56.765,"    ""load_memory_from_file_path"": null,"
-2020-06-21 00:40:56.765,"    ""max_size"": ["
-2020-06-21 00:40:56.765,"        ""<MemoryGranularity.Transitions: 0>"","
-2020-06-21 00:40:56.765,        1000000
-2020-06-21 00:40:56.765,"    ],"
-2020-06-21 00:40:56.765,"    ""n_step"": -1,"
-2020-06-21 00:40:56.765,"    ""shared_memory"": false,"
-2020-06-21 00:40:56.765,"    ""train_to_eval_ratio"": 1"
-2020-06-21 00:40:56.765,}
-2020-06-21 00:40:56.765,[RL] Dynamically imported of memory <rl_coach.memories.episodic.episodic_experience_replay.EpisodicExperienceReplay object at 0x7f83f4105898>
-2020-06-21 00:40:56.765,[RL] Setting devices
-2020-06-21 00:40:56.765,[RL] Setting filters
-2020-06-21 00:40:56.765,[RL] Setting filter devices: numpy
-2020-06-21 00:40:56.765,[RL] Setting Phase
-2020-06-21 00:40:56.765,[RL] After setting Phase
-2020-06-21 00:40:56.765,[RL] Setting signals
-2020-06-21 00:40:56.765,[RL] Agent init successful
-2020-06-21 00:40:56.765,[RL] ActorCriticAgent init
-2020-06-21 00:40:56.765,[RL] ActorCriticAgent  init successful
-2020-06-21 00:40:56.765,Created agent: agent
-2020-06-21 00:40:55.719,Saving updated checkpoint to ./renamed_checkpoint/47_Step-10378.ckpt
-2020-06-21 00:40:50.588,Renaming checkpoint from checkpoint_dir: ./checkpoint for agent: agent
-2020-06-21 00:40:50.588,2020-06-21 00:40:49.623840: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
-2020-06-21 00:40:49.549,"[ERROR] [1592700049.054502413, 2.798000000]: [open_codec] Invalid codec"
-2020-06-21 00:40:49.549,[libx264 @ 0x1b0fe40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
-2020-06-21 00:40:49.549,"[libx264 @ 0x1b0fe40] profile High, level 2.2"
-2020-06-21 00:40:49.549,"[libx264 @ 0x1b0fe40] 264 - core 148 r2643 5c65704 - H.264/MPEG-4 AVC codec - Copyleft 2003-2015 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=7 lookahead_threads=7 sliced_threads=1 slices=7 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=1 keyint=15 keyint_min=8 scenecut=40 intra_refresh=0 rc=abr mbtree=0 bitrate=2048 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00"
-2020-06-21 00:40:48.508,Successfully downloaded model metadata from DeepRacer-SageMaker-RoboMaker-comm-530118815273-20200620220035-faed9c75-ae76-4b2e-8b4e-28f7564ca533/model/model_metadata.json.
-2020-06-21 00:40:48.508,"Sensor list ['FRONT_FACING_CAMERA'], network DEEP_CONVOLUTIONAL_NETWORK_SHALLOW, simapp_version 2.0"
-2020-06-21 00:40:48.508,Received Sagemaker hyperparameters successfully!
-2020-06-21 00:40:48.508,"Sensor list ['FRONT_FACING_CAMERA'], network DEEP_CONVOLUTIONAL_NETWORK_SHALLOW, simapp_version 2.0"
-2020-06-21 00:40:48.508,"Loaded action space from file: [{'steering_angle': -25, 'index': 0, 'speed': 1.1666666666666665}, {'steering_angle': -25, 'index': 1, 'speed': 2.333333333333333}, {'steering_angle': -25, 'index': 2, 'speed': 3.5}, {'steering_angle': -16.66666666666667, 'index': 3, 'speed': 1.1666666666666665}, {'steering_angle': -16.66666666666667, 'index': 4, 'speed': 2.333333333333333}, {'steering_angle': -16.66666666666667, 'index': 5, 'speed': 3.5}, {'steering_angle': -8.333333333333336, 'index': 6, 'speed': 1.1666666666666665}, {'steering_angle': -8.333333333333336, 'index': 7, 'speed': 2.333333333333333}, {'steering_angle': -8.333333333333336, 'index': 8, 'speed': 3.5}, {'steering_angle': 0, 'index': 9, 'speed': 1.1666666666666665}, {'steering_angle': 0, 'index': 10, 'speed': 2.333333333333333}, {'steering_angle': 0, 'index': 11, 'speed': 3.5}, {'steering_angle': 8.33333333333333, 'index': 12, 'speed': 1.1666666666666665}, {'steering_angle': 8.33333333333333, 'index': 13, 'speed': 2.333333333333333}, {'steering_angle': 8.33333333333333, 'index': 14, 'speed': 3.5}, {'steering_angle': 16.66666666666667, 'index': 15, 'speed': 1.1666666666666665}, {'steering_angle': 16.66666666666667, 'index': 16, 'speed': 2.333333333333333}, {'steering_angle': 16.66666666666667, 'index': 17, 'speed': 3.5}, {'steering_angle': 25, 'index': 18, 'speed': 1.1666666666666665}, {'steering_angle': 25, 'index': 19, 'speed': 2.333333333333333}, {'steering_angle': 25, 'index': 20, 'speed': 3.5}]"
-2020-06-21 00:40:48.508,"Reward Distribution Graph:  racecar [{'steering_angle': -25, 'index': 0, 'speed': 1.1666666666666665}, {'steering_angle': -25, 'index': 1, 'speed': 2.333333333333333}, {'steering_angle': -25, 'index': 2, 'speed': 3.5}, {'steering_angle': -16.66666666666667, 'index': 3, 'speed': 1.1666666666666665}, {'steering_angle': -16.66666666666667, 'index': 4, 'speed': 2.333333333333333}, {'steering_angle': -16.66666666666667, 'index': 5, 'speed': 3.5}, {'steering_angle': -8.333333333333336, 'index': 6, 'speed': 1.1666666666666665}, {'steering_angle': -8.333333333333336, 'index': 7, 'speed': 2.333333333333333}, {'steering_angle': -8.333333333333336, 'index': 8, 'speed': 3.5}, {'steering_angle': 0, 'index': 9, 'speed': 1.1666666666666665}, {'steering_angle': 0, 'index': 10, 'speed': 2.333333333333333}, {'steering_angle': 0, 'index': 11, 'speed': 3.5}, {'steering_angle': 8.33333333333333, 'index': 12, 'speed': 1.1666666666666665}, {'steering_angle': 8.33333333333333, 'index': 13, 'speed': 2.333333333333333}, {'steering_angle': 8.33333333333333, 'index': 14, 'speed': 3.5}, {'steering_angle': 16.66666666666667, 'index': 15, 'speed': 1.1666666666666665}, {'steering_angle': 16.66666666666667, 'index': 16, 'speed': 2.333333333333333}, {'steering_angle': 16.66666666666667, 'index': 17, 'speed': 3.5}, {'steering_angle': 25, 'index': 18, 'speed': 1.1666666666666665}, {'steering_angle': 25, 'index': 19, 'speed': 2.333333333333333}, {'steering_angle': 25, 'index': 20, 'speed': 3.5}]"
-2020-06-21 00:40:48.508,Using the following hyper-parameters
-2020-06-21 00:40:48.508,{
-2020-06-21 00:40:48.508,"  ""batch_size"": 64,"
-2020-06-21 00:40:48.508,"  ""beta_entropy"": 0.01,"
-2020-06-21 00:40:48.508,"  ""discount_factor"": 0.999,"
-2020-06-21 00:40:48.508,"  ""e_greedy_value"": 1.0,"
-2020-06-21 00:40:48.508,"  ""epsilon_steps"": 10000,"
-2020-06-21 00:40:48.508,"  ""exploration_type"": ""categorical"","
-2020-06-21 00:40:48.508,"  ""loss_type"": ""huber"","
-2020-06-21 00:40:48.508,"  ""lr"": 0.0003,"
-2020-06-21 00:40:48.508,"  ""num_episodes_between_training"": 20,"
-2020-06-21 00:40:48.508,"  ""num_epochs"": 10,"
-2020-06-21 00:40:48.508,"  ""stack_size"": 1,"
-2020-06-21 00:40:48.508,"  ""term_cond_avg_score"": 100000.0,"
-2020-06-21 00:40:48.508,"  ""term_cond_max_episodes"": 100000"
-2020-06-21 00:40:48.508,}
-2020-06-21 00:40:47.469,Spawning sub camera model
-2020-06-21 00:40:47.469,"[ INFO] [1592700046.488975532, 2.798000000]: Camera Plugin: Using the 'robotNamespace' param: '/racecar/main_camera'"
-2020-06-21 00:40:47.469,"[ INFO] [1592700046.491162578, 2.798000000]: Camera Plugin (ns = /racecar/main_camera)  <tf_prefix_>, set to ""/racecar/main_camera"""
-2020-06-21 00:40:47.469,"Warning [parser.cc:835] XML Element[projection_type], child of element[camera] not defined in SDF. Ignoring[projection_type]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element."
-2020-06-21 00:40:47.469,"[ INFO] [1592700046.968295504, 2.798000000]: Camera Plugin: Using the 'robotNamespace' param: '/sub_camera'"
-2020-06-21 00:40:47.469,"[ INFO] [1592700046.970810843, 2.798000000]: Camera Plugin (ns = /sub_camera)  <tf_prefix_>, set to ""/sub_camera"""
-2020-06-21 00:40:47.469,S3 bucket: aws-deepracer-f53cf4a0-f95f-4887-a5b1-920d26fb8b14 
-2020-06-21 00:40:47.469, S3 prefix: DeepRacer-SageMaker-RoboMaker-comm-530118815273-20200620220035-faed9c75-ae76-4b2e-8b4e-28f7564ca533
-2020-06-21 00:40:47.469,Initializing SageS3Client...
-2020-06-21 00:40:46.428,Pausing physics after initializing the cars
-2020-06-21 00:40:44.390,[racecar/racecar_spawn-1] process has finished cleanly
-2020-06-21 00:40:44.390,log file: /home/robomaker/.ros/log/9b0020d4-b357-11ea-a3a4-0242a9fe0103/racecar-racecar_spawn-1*.log
-2020-06-21 00:40:44.390,"[ INFO] [1592700043.703745055, 0.340000000]: Camera Plugin: Using the 'robotNamespace' param: '/racecar/'"
-2020-06-21 00:40:44.390,"[ INFO] [1592700043.706547126, 0.340000000]: Camera Plugin (ns = /racecar/)  <tf_prefix_>, set to ""/racecar"""
-2020-06-21 00:40:44.390,"[ INFO] [1592700043.740208311, 0.340000000]: Loading gazebo_ros_control plugin"
-2020-06-21 00:40:44.390,"[ INFO] [1592700043.740316802, 0.340000000]: Starting gazebo_ros_control plugin in namespace: /racecar"
-2020-06-21 00:40:44.390,"[ INFO] [1592700043.741348525, 0.340000000]: gazebo_ros_control plugin is waiting for model URDF in parameter [/racecar/robot_description] on the ROS param server."
-2020-06-21 00:40:44.390,"[ INFO] [1592700043.858397105, 0.340000000]: Loaded gazebo_ros_control."
-2020-06-21 00:40:44.390,"[INFO] [1592700043.861406, 0.342000]: Controller Spawner: Waiting for service controller_manager/switch_controller"
-2020-06-21 00:40:44.390,"[INFO] [1592700043.863035, 0.344000]: Controller Spawner: Waiting for service controller_manager/unload_controller"
-2020-06-21 00:40:44.390,"[INFO] [1592700043.864418, 0.345000]: Loading controller: left_rear_wheel_velocity_controller"
-2020-06-21 00:40:44.390,"[INFO] [1592700043.901557, 0.377000]: Loading controller: right_rear_wheel_velocity_controller"
-2020-06-21 00:40:44.390,"[INFO] [1592700043.934454, 0.403000]: Loading controller: left_front_wheel_velocity_controller"
-2020-06-21 00:40:44.390,"[INFO] [1592700043.967760, 0.427000]: Loading controller: right_front_wheel_velocity_controller"
-2020-06-21 00:40:44.390,"[INFO] [1592700044.001003, 0.446000]: Loading controller: left_steering_hinge_position_controller"
-2020-06-21 00:40:44.390,"[INFO] [1592700044.034996, 0.468000]: Loading controller: right_steering_hinge_position_controller"
-2020-06-21 00:40:44.390,"[INFO] [1592700044.069186, 0.501000]: Loading controller: joint_state_controller"
-2020-06-21 00:40:44.390,"[INFO] [1592700044.075291, 0.507000]: Controller Spawner: Loaded controllers: left_rear_wheel_velocity_controller, right_rear_wheel_velocity_controller, left_front_wheel_velocity_controller, right_front_wheel_velocity_controller, left_steering_hinge_position_controller, right_steering_hinge_position_controller, joint_state_controller"
-2020-06-21 00:40:44.390,"[INFO] [1592700044.078320, 0.510000]: Started controllers: left_rear_wheel_velocity_controller, right_rear_wheel_velocity_controller, left_front_wheel_velocity_controller, right_front_wheel_velocity_controller, left_steering_hinge_position_controller, right_steering_hinge_position_controller, joint_state_controller"
-2020-06-21 00:40:43.350,SpawnModel script started
-2020-06-21 00:40:43.350,"[INFO] [1592700042.502564, 0.000000]: Loading model XML from ros parameter"
-2020-06-21 00:40:43.350,"[INFO] [1592700042.504782, 0.000000]: Waiting for service /gazebo/spawn_urdf_model"
-2020-06-21 00:40:43.350,[ INFO] [1592700042.833042543]: DeepRacerGazeboSystemPlugin: Init Complete
-2020-06-21 00:40:43.350,"[ INFO] [1592700042.885568909, 0.022000000]: waitForService: Service [/gazebo/set_physics_properties] is now available."
-2020-06-21 00:40:43.350,"[ INFO] [1592700042.916891722, 0.052000000]: Physics dynamic reconfigure ready."
-2020-06-21 00:40:43.350,"[ERROR] [1592700043.104516320, 0.236000000]: GetModelStates: model [racecar] does not exist"
-2020-06-21 00:40:43.350,"[INFO] [1592700043.108128, 0.240000]: Calling service /gazebo/spawn_urdf_model"
-2020-06-21 00:40:43.350,"[INFO] [1592700043.286897, 0.340000]: Spawn status: SpawnModel: Successfully spawned entity"
-2020-06-21 00:40:42.308,process[visualization_node-9]: started with pid [551]
-2020-06-21 00:40:42.308,process[save_to_mp4-10]: started with pid [563]
-2020-06-21 00:40:42.308,process[agent-11]: started with pid [609]
-2020-06-21 00:40:42.308,+ export PYTHONUNBUFFERED=1
-2020-06-21 00:40:42.308,+ PYTHONUNBUFFERED=1
-2020-06-21 00:40:42.308,+ python3 -m markov.evaluation_worker
-2020-06-21 00:40:42.308,+ /opt/amazon/RoboMakerGazebo/bin/gzserver -s librobomaker_gazebo_metrics_plugin.so -e ode /home/robomaker/workspace/applications/simulation-application/bundle/opt/install/deepracer_simulation_environment/share/deepracer_simulation_environment/worlds/reinvent_base.world -s libdeepracer_gazebo_system_plugin.so -s /home/robomaker/workspace/applications/simulation-application/bundle/opt/ros/kinetic/lib/libgazebo_ros_paths_plugin.so -s /home/robomaker/workspace/applications/simulation-application/bundle/opt/ros/kinetic/lib/libgazebo_ros_api_plugin.so __name:=gazebo __log:=/home/robomaker/.ros/log/9b0020d4-b357-11ea-a3a4-0242a9fe0103/gazebo-6.log
-2020-06-21 00:40:42.308,"[INFO] [1592700041.750886, 0.000000]: Controller Spawner: Waiting for service controller_manager/load_controller"
-2020-06-21 00:40:42.308,[ INFO] [1592700041.927409813]: DeepRacerGazeboSystemPlugin: Load
-2020-06-21 00:40:42.308,[ INFO] [1592700041.928176845]: DeepRacerGazeboSystemPlugin: Finished loading.
-2020-06-21 00:40:42.308,[ INFO] [1592700041.936713512]: Finished loading Gazebo ROS API Plugin.
-2020-06-21 00:40:42.308,"[ INFO] [1592700041.937349342]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting..."
-2020-06-21 00:40:42.308,the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
-2020-06-21 00:40:42.308,/usr/lib/python2.7/dist-packages/matplotlib/font_manager.py:273: UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment.
-2020-06-21 00:40:42.308,  warnings.warn('Matplotlib is building the font cache using fc-list. This may take a moment.')
-2020-06-21 00:40:41.265,started roslaunch server http://169.254.1.3:41363/
-2020-06-21 00:40:41.265,SUMMARY
-2020-06-21 00:40:41.265,========
-2020-06-21 00:40:41.265,PARAMETERS
-2020-06-21 00:40:41.265, * /AWS_REGION: us-east-1
-2020-06-21 00:40:41.265, * /BODY_SHELL_TYPE: deepracer
-2020-06-21 00:40:41.265, * /CAR_COLOR: Red
-2020-06-21 00:40:41.265, * /CAR_NAME: RatesRacer-3_5
-2020-06-21 00:40:41.265, * /DISPLAY_NAME: RatesModel-U2
-2020-06-21 00:40:41.265, * /JOB_TYPE: EVALUATION
-2020-06-21 00:40:41.265, * /KINESIS_VIDEO_STREAM_NAME: dr-kvs-5301188152...
-2020-06-21 00:40:41.265, * /METRICS_S3_BUCKET: aws-deepracer-f53...
-2020-06-21 00:40:41.265, * /METRICS_S3_OBJECT_KEY: DeepRacer-Metrics...
-2020-06-21 00:40:41.265, * /MODEL_NAME: RatesModel-U2
-2020-06-21 00:40:41.265, * /MODEL_S3_BUCKET: aws-deepracer-f53...
-2020-06-21 00:40:41.265, * /MODEL_S3_PREFIX: DeepRacer-SageMak...
-2020-06-21 00:40:41.265, * /NUMBER_OF_TRIALS: 3
-2020-06-21 00:40:41.265, * /RACER_NAME: i727935-league
-2020-06-21 00:40:41.265, * /RACE_TYPE: TIME_TRIAL
-2020-06-21 00:40:41.265, * /ROBOMAKER_SIMULATION_JOB_ACCOUNT_ID: 530118815273
-2020-06-21 00:40:41.265, * /SIMTRACE_S3_BUCKET: aws-deepracer-f53...
-2020-06-21 00:40:41.265, * /SIMTRACE_S3_PREFIX: DeepRacer-Logs/Ev...
-2020-06-21 00:40:41.265, * /VIDEO_JOB_TYPE: EVALUATION
-2020-06-21 00:40:41.265, * /WORLD_NAME: reinvent_base
-2020-06-21 00:40:41.265, * /racecar/h264_video_encoder/bitrate: 2048000
-2020-06-21 00:40:41.265, * /racecar/h264_video_encoder/fps_denominator: 1
-2020-06-21 00:40:41.265, * /racecar/h264_video_encoder/fps_numerator: 15
-2020-06-21 00:40:41.265, * /racecar/h264_video_encoder/image_transport: raw
-2020-06-21 00:40:41.265, * /racecar/h264_video_encoder/publication_topic: /racecar/b9/kvs/v...
-2020-06-21 00:40:41.265, * /racecar/h264_video_encoder/subscription_topic: /racecar/deeprace...
-2020-06-21 00:40:41.265, * /racecar/joint_state_controller/publish_rate: 60
-2020-06-21 00:40:41.265, * /racecar/joint_state_controller/type: joint_state_contr...
-2020-06-21 00:40:41.265, * /racecar/kinesis_video_streamer/aws_client_configuration/connect_timeout_ms: 9000
-2020-06-21 00:40:41.265, * /racecar/kinesis_video_streamer/aws_client_configuration/max_retries: 10
-2020-06-21 00:40:41.265, * /racecar/kinesis_video_streamer/aws_client_configuration/region: us-east-1
-2020-06-21 00:40:41.265, * /racecar/kinesis_video_streamer/aws_client_configuration/request_timeout_ms: 9000
-2020-06-21 00:40:41.265, * /racecar/kinesis_video_streamer/kinesis_video/log4cplus_config: /home/robomaker/w...
-2020-06-21 00:40:41.265, * /racecar/kinesis_video_streamer/kinesis_video/stream0/frame_rate: 30
-2020-06-21 00:40:41.265, * /racecar/kinesis_video_streamer/kinesis_video/stream0/frame_timecodes: False
-2020-06-21 00:40:41.265, * /racecar/kinesis_video_streamer/kinesis_video/stream0/key_frame_fragmentation: False
-2020-06-21 00:40:41.265, * /racecar/kinesis_video_streamer/kinesis_video/stream0/stream_name: dr-kvs-5301188152...
-2020-06-21 00:40:41.265, * /racecar/kinesis_video_streamer/kinesis_video/stream0/subscription_topic: /racecar/b9/kvs/v...
-2020-06-21 00:40:41.265, * /racecar/kinesis_video_streamer/kinesis_video/stream0/topic_type: 1
-2020-06-21 00:40:41.265, * /racecar/kinesis_video_streamer/kinesis_video/stream_count: 1
-2020-06-21 00:40:41.265, * /racecar/left_front_wheel_velocity_controller/joint: left_front_wheel_...
-2020-06-21 00:40:41.265, * /racecar/left_front_wheel_velocity_controller/pid/d: 0.0
-2020-06-21 00:40:41.265, * /racecar/left_front_wheel_velocity_controller/pid/i: 0.0
-2020-06-21 00:40:41.265, * /racecar/left_front_wheel_velocity_controller/pid/i_clamp: 0.0
-2020-06-21 00:40:41.265, * /racecar/left_front_wheel_velocity_controller/pid/p: 0.5
-2020-06-21 00:40:41.265, * /racecar/left_front_wheel_velocity_controller/type: effort_controller...
-2020-06-21 00:40:41.265, * /racecar/left_rear_wheel_velocity_controller/joint: left_rear_wheel_j...
-2020-06-21 00:40:41.265, * /racecar/left_rear_wheel_velocity_controller/pid/d: 0.0
-2020-06-21 00:40:41.265, * /racecar/left_rear_wheel_velocity_controller/pid/i: 0.0
-2020-06-21 00:40:41.265, * /racecar/left_rear_wheel_velocity_controller/pid/i_clamp: 0.0
-2020-06-21 00:40:41.265, * /racecar/left_rear_wheel_velocity_controller/pid/p: 1.0
-2020-06-21 00:40:41.265, * /racecar/left_rear_wheel_velocity_controller/type: effort_controller...
-2020-06-21 00:40:41.265, * /racecar/left_steering_hinge_position_controller/joint: left_steering_hin...
-2020-06-21 00:40:41.265, * /racecar/left_steering_hinge_position_controller/pid/d: 0.5
-2020-06-21 00:40:41.265, * /racecar/left_steering_hinge_position_controller/pid/i: 0.0
-2020-06-21 00:40:41.265, * /racecar/left_steering_hinge_position_controller/pid/p: 1.0
-2020-06-21 00:40:41.265, * /racecar/left_steering_hinge_position_controller/type: effort_controller...
-2020-06-21 00:40:41.265, * /racecar/right_front_wheel_velocity_controller/joint: right_front_wheel...
-2020-06-21 00:40:41.265, * /racecar/right_front_wheel_velocity_controller/pid/d: 0.0
-2020-06-21 00:40:41.265, * /racecar/right_front_wheel_velocity_controller/pid/i: 0.0
-2020-06-21 00:40:41.265, * /racecar/right_front_wheel_velocity_controller/pid/i_clamp: 0.0
-2020-06-21 00:40:41.265, * /racecar/right_front_wheel_velocity_controller/pid/p: 0.5
-2020-06-21 00:40:41.265, * /racecar/right_front_wheel_velocity_controller/type: effort_controller...
-2020-06-21 00:40:41.265, * /racecar/right_rear_wheel_velocity_controller/joint: right_rear_wheel_...
-2020-06-21 00:40:41.265, * /racecar/right_rear_wheel_velocity_controller/pid/d: 0.0
-2020-06-21 00:40:41.265, * /racecar/right_rear_wheel_velocity_controller/pid/i: 0.0
-2020-06-21 00:40:41.265, * /racecar/right_rear_wheel_velocity_controller/pid/i_clamp: 0.0
-2020-06-21 00:40:41.265, * /racecar/right_rear_wheel_velocity_controller/pid/p: 1.0
-2020-06-21 00:40:41.265, * /racecar/right_rear_wheel_velocity_controller/type: effort_controller...
-2020-06-21 00:40:41.265, * /racecar/right_steering_hinge_position_controller/joint: right_steering_hi...
-2020-06-21 00:40:41.265, * /racecar/right_steering_hinge_position_controller/pid/d: 0.5
-2020-06-21 00:40:41.265, * /racecar/right_steering_hinge_position_controller/pid/i: 0.0
-2020-06-21 00:40:41.265, * /racecar/right_steering_hinge_position_controller/pid/p: 1.0
-2020-06-21 00:40:41.265, * /racecar/right_steering_hinge_position_controller/type: effort_controller...
-2020-06-21 00:40:41.265," * /racecar/robot_description: <?xml version=""1...."
-2020-06-21 00:40:41.265, * /rosdistro: kinetic
-2020-06-21 00:40:41.265, * /rosversion: 1.12.14
-2020-06-21 00:40:41.265, * /use_sim_time: True
-2020-06-21 00:40:41.265,NODES
-2020-06-21 00:40:41.265,  /racecar/
-2020-06-21 00:40:41.265,    controller_manager (controller_manager/spawner)
-2020-06-21 00:40:41.265,    h264_video_encoder (h264_video_encoder/h264_video_encoder)
-2020-06-21 00:40:41.265,    kinesis_video_streamer (kinesis_video_streamer/kinesis_video_streamer)
-2020-06-21 00:40:41.265,    racecar_spawn (gazebo_ros/spawn_model)
-2020-06-21 00:40:41.265,    robot_state_publisher (robot_state_publisher/robot_state_publisher)
-2020-06-21 00:40:41.265,  /
-2020-06-21 00:40:41.265,    agent (deepracer_simulation_environment/run_evaluation_rl_agent.sh)
-2020-06-21 00:40:41.265,    car_reset_node (deepracer_simulation_environment/car_node.py)
-2020-06-21 00:40:41.265,    gazebo (gazebo_ros/gzserver)
-2020-06-21 00:40:41.265,    kinesis_video_camera_node (deepracer_simulation_environment/kinesis_video_camera_node.py)
-2020-06-21 00:40:41.265,    save_to_mp4 (deepracer_simulation_environment/save_to_mp4.py)
-2020-06-21 00:40:41.265,    visualization_node (deepracer_simulation_environment/visualization_node.py)
-2020-06-21 00:40:41.265,ROS_MASTER_URI=http://169.254.1.3:11311/
-2020-06-21 00:40:41.265,]2;/home/robomaker/workspace/applications/simulation-application/bundle/opt/install/deepracer_simulation_environment/share/deepracer_simulation_environment/launch/evaluation_rl_agent.launch http://169.254.1.3:11311/
-2020-06-21 00:40:41.265,process[racecar/racecar_spawn-1]: started with pid [455]
-2020-06-21 00:40:41.265,process[racecar/controller_manager-2]: started with pid [456]
-2020-06-21 00:40:41.265,process[racecar/robot_state_publisher-3]: started with pid [457]
-2020-06-21 00:40:41.265,process[racecar/h264_video_encoder-4]: started with pid [458]
-2020-06-21 00:40:41.265,process[racecar/kinesis_video_streamer-5]: started with pid [459]
-2020-06-21 00:40:41.265,process[gazebo-6]: started with pid [466]
-2020-06-21 00:40:41.265,process[car_reset_node-7]: started with pid [513]
-2020-06-21 00:40:41.265,process[kinesis_video_camera_node-8]: started with pid [539]
-2020-06-21 00:40:40.216,"{'MODEL_METADATA_FILE_S3_KEY': ['DeepRacer-SageMaker-RoboMaker-comm-530118815273-20200620220035-faed9c75-ae76-4b2e-8b4e-28f7564ca533/model/model_metadata.json'], 'MODEL_S3_BUCKET': ['aws-deepracer-f53cf4a0-f95f-4887-a5b1-920d26fb8b14'], 'BODY_SHELL_TYPE': ['deepracer'], 'RACER_NAME': ['i727935-league'], 'RACE_TYPE': 'TIME_TRIAL', 'MODEL_S3_PREFIX': ['DeepRacer-SageMaker-RoboMaker-comm-530118815273-20200620220035-faed9c75-ae76-4b2e-8b4e-28f7564ca533'], 'CAR_COLOR': ['Red']}"
-2020-06-21 00:40:40.216,"Sensor list [u'FRONT_FACING_CAMERA'], network DEEP_CONVOLUTIONAL_NETWORK_SHALLOW, simapp_version 2.0"
-2020-06-21 00:40:40.216,... logging to /home/robomaker/.ros/log/9b0020d4-b357-11ea-a3a4-0242a9fe0103/roslaunch-f107f3ee13fc-435.log
-2020-06-21 00:40:40.216,Checking log directory for disk usage. This may take awhile.
-2020-06-21 00:40:40.216,Press Ctrl-C to interrupt
-2020-06-21 00:40:40.216,Done checking log file disk usage. Usage is <1GB.
-2020-06-21 00:40:40.216,]2;/home/robomaker/workspace/applications/simulation-application/bundle/opt/install/deepracer_simulation_environment/share/deepracer_simulation_environment/launch/evaluation_rl_agent.launch
-2020-06-21 00:40:39.179,Verified internet connection
-2020-06-21 00:40:38.109,Checking internet connection...
-2020-06-21 00:39:07.063,ROS_MASTER_URI=http://169.254.1.3:11311/
-2020-06-21 00:39:07.063,]2;/home/robomaker/workspace/applications/simulation-application/bundle/opt/install/deepracer_simulation_environment/share/deepracer_simulation_environment/launch/evaluation.launch http://169.254.1.3:11311/
-2020-06-21 00:39:07.063,setting /run_id to 9b0020d4-b357-11ea-a3a4-0242a9fe0103
-2020-06-21 00:39:07.063,process[rosout-1]: started with pid [174]
-2020-06-21 00:39:07.063,started core service [/rosout]
-2020-06-21 00:39:07.063,process[download_params_and_roslaunch_agent_node-2]: started with pid [191]
-2020-06-21 00:39:05.984,started roslaunch server http://169.254.1.3:39221/
-2020-06-21 00:39:05.984,SUMMARY
-2020-06-21 00:39:05.984,========
-2020-06-21 00:39:05.984,PARAMETERS
-2020-06-21 00:39:05.984, * /rosdistro: kinetic
-2020-06-21 00:39:05.984, * /rosversion: 1.12.14
-2020-06-21 00:39:05.984,NODES
-2020-06-21 00:39:05.984,  /
-2020-06-21 00:39:05.984,    download_params_and_roslaunch_agent_node (deepracer_simulation_environment/download_params_and_roslaunch_agent.py)
-2020-06-21 00:39:05.984,auto-starting new master
-2020-06-21 00:39:05.984,process[master]: started with pid [134]
-2020-06-21 00:39:03.287,"WARNING: Could not change permissions for folder [/home/robomaker/.ros/log/9b0020d4-b357-11ea-a3a4-0242a9fe0103], make sure that the parent folder has correct permissions."
-2020-06-21 00:39:03.287,Checking log directory for disk usage. This may take awhile.
-2020-06-21 00:39:03.287,Press Ctrl-C to interrupt
-2020-06-21 00:39:03.287,Done checking log file disk usage. Usage is <1GB.
-2020-06-21 00:39:03.287,]2;/home/robomaker/workspace/applications/simulation-application/bundle/opt/install/deepracer_simulation_environment/share/deepracer_simulation_environment/launch/evaluation.launch
-2020-06-21 00:39:01.304,+ exec stdbuf -oL -eL roslaunch deepracer_simulation_environment evaluation.launch
-2020-06-21 00:38:01.554,RoboMaker Log Recorder Starting...
