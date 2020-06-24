@@ -5,8 +5,8 @@ def df_to_params(s,center_line):
     
     params = {
  "all_wheels_on_track": s.all_wheels_on_track,
- "x": s['x-coordinate'],
- "y": s['y-coordinate'],
+ "x": s['x'],
+ "y": s['y'],
  "closest_objects": [],
  "closest_waypoints": old_params['closest_waypoints'],#[int, int], π indices of the two nearest waypoints.
  "distance_from_center": 0.0,#float, π distance in meters from the track center
@@ -31,9 +31,7 @@ def df_to_params(s,center_line):
     return params
 
 def new_names(serie):
-    new_names = {'x-coordinate':'x',
-                'y-coordinate':'y',
-                    'step' :'steps',
+    new_names = {'step' :'steps',
                  'heading':'yaw',
                  'steering_angle':'steer',
                   'speed':'throttle',
@@ -46,9 +44,7 @@ def new_names(serie):
     return serie.rename(new_names)
 
 def new_names_df(df):
-    new_names = {'x-coordinate':'x',
-                'y-coordinate':'y',
-                    'step' :'steps',
+    new_names = {'step' :'steps',
                  'heading':'yaw',
                  'steering_angle':'steer',
                   'speed':'throttle',

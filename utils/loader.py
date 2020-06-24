@@ -1,15 +1,15 @@
 import pandas 
 
 def load_logs(file_name):
-    sim_trace_log_column_names = ['episode', 'step', 'x-coordinate', 'y-coordinate', 'heading', 'steering_angle',       'speed', 'action_taken', 'reward', 'job_completed', 'all_wheels_on_track', 'progress','closest_waypoint_index', 'track_length', 'time','status']
+    sim_trace_log_column_names = ['episode', 'step', 'x', 'y', 'heading', 'steering_angle',       'speed', 'action_taken', 'reward', 'job_completed', 'all_wheels_on_track', 'progress','closest_waypoint_index', 'track_length', 'time','status']
     
-    numeric_cols = ['episode', 'step', 'x-coordinate', 'y-coordinate', 'heading',
+    numeric_cols = ['episode', 'step', 'x', 'y', 'heading',
        'steering_angle', 'speed', 'action_taken', 'reward',  'progress', 'closest_waypoint_index',
        'track_length',]
     
     bool_cols = ['job_completed', 'all_wheels_on_track']
     
-    df = pandas.read_csv(file_name,sep=',')
+    df = pandas.read_csv(file_name,sep=',',error_bad_lines=False)
     df = df['@message'].str.split(',',expand=True)
     df.columns=sim_trace_log_column_names
     df['episode'] = df['episode'].str.replace('SIM_TRACE_LOG:','')
