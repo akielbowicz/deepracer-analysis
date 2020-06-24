@@ -431,7 +431,7 @@ plot_polar_hist(df, itr)
 #
 
 ### choose episode id
-EPZ = 795
+EPZ = df.episode.sample(1).values[0]
 
 # Plot Index Map to understand graph
 plot_index_map(asl)
@@ -446,12 +446,11 @@ plot_4_hist(df, E = EPZ)
 
 # + jupyter={"source_hidden": true}
 plot_polar_hist(df, E = EPZ)
+# -
 
-# + jupyter={"source_hidden": true}
 #This shows a histogram of actions per waypoint. Will let you spot potentially problematic places
 episode = df[df['episode']==EPZ]
 episode[:-1].plot.bar(x='closest_waypoint', y='reward',figsize=(16, 6))
-# -
 
 # # Analyzing Actions
 # ## You can analyze all actions or only set of actions with indexes defined in setActions
@@ -466,5 +465,3 @@ for i in setActions:
     print("\n\n Heatmap for action with index {}: steering: {}, throttle: {}".format(a.index, a.steer,a.throttle))
     tr_plot = pu.plot_track(df[df['action'] == a.index], track, value_field="reward") 
     plt.show()
-# -
-
