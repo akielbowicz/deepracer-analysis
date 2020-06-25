@@ -1,4 +1,7 @@
 from deepracer.logs import NewRewardUtils
+import scipy.linalg 
+import numpy
+
 def df_to_params(s,center_line):
     
     old_params = NewRewardUtils.df_to_params(new_names(s), center_line)
@@ -60,3 +63,17 @@ def new_names_df(df):
 
 def calculate_iteration(df):
     df['iteration']=df['episode'].apply( lambda x: int( x/ 20) + 1)
+    
+def calculate_velocity(df):
+    "It should be calculated by episode or it will have strange values at the begining and  end"
+    x,y,t = df[['x','y','numeric_timestamp']].values.T
+    dx, dy, dt = numpy.diff([x,y,t],prepend=0)  
+    df['velocity']  = scipy.linalg.norm([dx,dy],axis=0) / dt 
+    
+def calculate_duration(df):
+    df['duration'] = df[['episode','numeric_timestamp']].groupby('episode').transform(lambda x: x - x.min())
+
+def get_episode(df,episode):
+    ep = df.loc[df.episode == episode, :].sort_values('step')
+    calculate_velocity(ep)
+    return ep

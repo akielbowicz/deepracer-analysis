@@ -1,4 +1,6 @@
 import pandas 
+import pathlib
+from .transformer import calculate_iteration, calculate_duration
 
 def load_logs(file_name):
     sim_trace_log_column_names = ['episode', 'step', 'x', 'y', 'heading', 'steering_angle',       'speed', 'action_taken', 'reward', 'job_completed', 'all_wheels_on_track', 'progress','closest_waypoint_index', 'track_length', 'time','status']
@@ -102,11 +104,19 @@ def load_sample_complete_laps(path):
                           .agg(list)['episode'] )
     DFs = []
     for filename, episodes in sample_laps.iteritems():
-        df = load_logs(f'../logs/{filename}')
+        df = get_df(f'../logs/{filename}')
         df = df[df['episode'].isin(episodes)]
         df['stream'] = filename
-#         df['name'] = [f'{filename}_{ep}' for ep in episodes]
         DFs.append(df)
+    df['lap_name'] = df['stream'] + '_' + df['episode'].astype(str)
     df = pandas.concat(DFs).reset_index()
-#     df['stream'] = df['stream'].astype('category')
     return df
+
+def get_df(fname):
+    df = load_logs(fname)
+    calculate_iteration(df)
+    calculate_duration(df)
+    return df
+
+def get_files_paths(logs_base_path):
+    return sorted([(x.name,x) for x in pathlib.Path(logs_base_path).glob('*.log')])
