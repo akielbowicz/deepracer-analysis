@@ -30,5 +30,3 @@ def aggregate_episode_reward(df, reward_calculator, df_to_params, track, reward_
     '''  df should contain only episode information '''
     df = calculate_new_reward(reward_calculator, df, track.center_line, df_to_params, reward_name)
     return calculate_cumulative_reward( df,['reward',reward_name])    
-
-

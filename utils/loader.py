@@ -108,8 +108,8 @@ def load_sample_complete_laps(path):
         df = df[df['episode'].isin(episodes)]
         df['stream'] = filename
         DFs.append(df)
-    df['lap_name'] = df['stream'] + '_' + df['episode'].astype(str)
     df = pandas.concat(DFs).reset_index()
+    df['lap_name'] = df['stream'] + '_' + df['episode'].astype(str)
     return df
 
 def get_df(fname):
