@@ -1,12 +1,62 @@
-Start a JupyterLab to analyze data:
+# This is a fork where we:
+
+- Try to embrace the interactivity of JupyterLab through the usage of ipywidgets derived libraries.
+
+- Try to modularize the analysis into smaller Notebooks, it's cool to have a lot of things but it gets messy quickly.
+
+- Use Binder as a colaborative environment.
+
+- Use Voila to create web applications enabling non-coders to use the analysis. 
+
+Using Binder and Voila enable us to run the applications from any device with a web browser, this is cool because you can see tiny graphs on your mobile phone.
+
+### You can check all the notebooks on
+
+[Index](./notebooks/Index.md)
+
+
+### Start JupyterLab on Binder to analyze data:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/akielbowicz/deepracer-analysis.git/first_analysis?urlpath=%2Flab/tree/README.md)
 
-Or you can directly try the simple app: 
+### Or you can directly try the simple web app: 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/akielbowicz/deepracer-analysis.git/first_analysis?urlpath=%2Fvoila%2Frender%2Fnotebooks%2FLapsAnalysis.ipynb)
 
+## I want to run it on my machine, how can I do that?
 
+As this is mainly a development environment there are a lot of extra dependencies, feel free to remove them in your local environment.
+
+- Install python your prefered way
+- Try to create a virtual environment 
+
+On linux:
+
+- `pip install -U pip` to get the latest pip
+- `pip install -r requirements.txt`
+- `chmod +x postBuild`
+- `./postBuild`
+- `jupyter lab`
+
+On win:
+
+- `pip install -U pip` to get the latest pip
+- `pip install -r requirements.txt`
+- run each of the lines in `postBuild` on cmd 
+- `jupyter lab`
+
+### For testing development
+
+1. `pip install -r requirements-dev.txt`
+2. `pytest --nbval`
+
+if the content of the returns in the notebook are not deterministically generated you can use `--nbval-lax` flag to test only notebook execution
+
+`pytest --nbval-lax`
+
+
+-------------------------------------------
+# From here on goes the original stuff
 -------------------------------------------
 # deepracer-analysis
 
