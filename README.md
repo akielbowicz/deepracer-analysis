@@ -1,10 +1,15 @@
 Start a JupyterLab to analyze data:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/akielbowicz/deepracer-analysis.git/first_analysis?urlpath=%2Flab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/akielbowicz/deepracer-analysis.git/first_analysis?urlpath=%2Flab/tree/README.md)
 
 Or you can directly try the simple app: 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/akielbowicz/deepracer-analysis.git/first_analysis?urlpath=%2Fvoila%2Frender%2Fnotebooks%2FLapsAnalysis.ipynb)
+
+-----
+see latest code at first_analisis branch
+
+---
 
 # deepracer-analysis
 
