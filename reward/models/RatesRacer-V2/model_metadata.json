@@ -1,0 +1,59 @@
+{
+    "action_space": [
+        {
+            "steering_angle": -20,
+            "speed": 2,
+            "index": 0
+        },
+        {
+            "steering_angle": -20,
+            "speed": 4,
+            "index": 1
+        },
+        {
+            "steering_angle": -10,
+            "speed": 2,
+            "index": 2
+        },
+        {
+            "steering_angle": -10,
+            "speed": 4,
+            "index": 3
+        },
+        {
+            "steering_angle": 0,
+            "speed": 2,
+            "index": 4
+        },
+        {
+            "steering_angle": 0,
+            "speed": 4,
+            "index": 5
+        },
+        {
+            "steering_angle": 10,
+            "speed": 2,
+            "index": 6
+        },
+        {
+            "steering_angle": 10,
+            "speed": 4,
+            "index": 7
+        },
+        {
+            "steering_angle": 20,
+            "speed": 2,
+            "index": 8
+        },
+        {
+            "steering_angle": 20,
+            "speed": 4,
+            "index": 9
+        }
+    ],
+    "sensor": [
+        "FRONT_FACING_CAMERA"
+    ],
+    "neural_network": "DEEP_CONVOLUTIONAL_NETWORK_SHALLOW",
+    "version": "2"
+}
