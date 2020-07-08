@@ -1,2 +1,2 @@
-git clone https://github.com/akielbowicz/deepracer-logs.git
-mv deepracer-logs/*.logs .
+git clone https://github.com/akielbowicz/deepracer-logs.git ~/deepracer-logs
+mv ~/deepracer-logs/training/*.log ~/logs/
