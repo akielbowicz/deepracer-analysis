@@ -42,7 +42,7 @@ def update_selectors(col,dd,sl,appModel, track_plot, get_episode, create_traject
     def select_episode(change):
         df = appModel.df
         episode = change['new']
-        ep = get_episode(df,episode)
+        ep = get_episode(df, episode)
         color = ep[col.value]
         trajectory = create_trajectory(ep.x,ep.y,scales)
         trajectory[-1].color = color
@@ -120,8 +120,8 @@ def plot_track(track, scales):
 
 def create_axes(scales):
     return [ Axis(scale=scales['x'], label='x'), 
-                 Axis(scale=scales['y'], orientation='vertical', label='y'),
-                 ColorAxis(scale=scales['color'], label='', side='right', orientation='vertical')]
+             Axis(scale=scales['y'], orientation='vertical', label='y'),
+             ColorAxis(scale=scales['color'], label='', side='right', orientation='vertical') ]
 
 def create_app(get_files_paths, logs_base_path, get_df, track, get_episode):
     

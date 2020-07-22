@@ -1,6 +1,7 @@
 import pandas 
 import pathlib
-from .transformer import calculate_iteration, calculate_duration
+from .transformer import ( calculate_iteration, calculate_duration, 
+                          calculate_total_reward, calculate_weighted_reward )
 
 def load_logs(file_name):
     sim_trace_log_column_names = ['episode', 'step', 'x', 'y', 'heading', 'steering_angle',       'speed', 'action_taken', 'reward', 'job_completed', 'all_wheels_on_track', 'progress','closest_waypoint_index', 'track_length', 'time','status']
@@ -112,10 +113,12 @@ def load_sample_complete_laps(path):
     df['lap_name'] = df['stream'] + '_' + df['episode'].astype(str)
     return df
 
-def get_df(fname):
+def get_df(fname, discount_factor=0.99):
     df = load_logs(fname)
-    calculate_iteration(df)
-    calculate_duration(df)
+    df = calculate_iteration(df)
+    df = calculate_duration(df)
+    df = calculate_total_reward(df)
+    df = calculate_weighted_reward(df, discount_factor)
     return df
 
 def get_files_paths(logs_base_path):
